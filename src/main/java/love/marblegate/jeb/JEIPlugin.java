@@ -25,7 +25,7 @@ public class JEIPlugin implements IModPlugin {
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
-        registration.addRecipes(Minecraft.getInstance().level.getRecipeManager().getAllRecipesFor(RecipeRegistry.Type.BREWING), JEIBrewingRecipe.UID);
+        registration.addRecipes(Minecraft.getInstance().level.getRecipeManager().getAllRecipesFor(RecipeRegistry.RECIPE_TYPE_BREWING.get()), JEIBrewingRecipe.UID);
     }
 
     @Override
